@@ -1,0 +1,36 @@
+@media screen and (max-width: 750px) {
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+  }
+  
+  ul#navList{
+    flex-direction: column;
+    height: auto;
+    margin: 5px;
+    align-items: center;
+  }
+  
+  nav#nav{
+    height: auto;
+  }
+  
+  ul#navList{
+    padding: 0;
+  }
+  
+  li.navItem{
+    padding: 5px 0px; 
+    width: 100%;
+    text-align: center;
+  }
+  
+  ul#navList>a{
+    width: 100%;
+  }
+  
+  footer#footer{
+    margin-bottom: 70px;
+  }
+}
