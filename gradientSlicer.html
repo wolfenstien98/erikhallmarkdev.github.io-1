@@ -22,6 +22,13 @@
       function computeValues(){
         var color1 = document.getElementById('color1Input').value;
         var color2 = document.getElementById('color2Input').value;
+                
+        if(color1.charAt(0) != "#") 
+          color1 = "#" + color1;
+        
+        if(color2.charAt(0) != "#") 
+          color2 = "#" + color2;
+        
         var sliceSize = document.getElementById('sliceSizeInput').value;
         var colors = [];
         
