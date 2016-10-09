@@ -33,13 +33,13 @@
       
         for(var x = 0; x <= sliceSize; x++){
           var rgb = {
-            r: ctx.getImageData((x/sliceSize) * c.width - 1, 1, 1, 1).data[0],
-            g: ctx.getImageData((x/sliceSize) * c.width - 1, 1, 1, 1).data[1],
-            b: ctx.getImageData((x/sliceSize) * c.width - 1, 1, 1, 1).data[2]
+            r: ctx.getImageData((x/sliceSize) * c.width, 1, 1, 1).data[0],
+            g: ctx.getImageData((x/sliceSize) * c.width, 1, 1, 1).data[1],
+            b: ctx.getImageData((x/sliceSize) * c.width, 1, 1, 1).data[2]
           }
           
           ctx.fillStyle = "red";
-          ctx.fillRect((x/sliceSize) * c.width - 1, 1, 5, c.height);
+          ctx.fillRect((x/sliceSize) * c.width, 1, 5, c.height);
           
           
           console.log("RGB: ", rgb);
