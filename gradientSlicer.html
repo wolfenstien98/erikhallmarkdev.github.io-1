@@ -11,37 +11,64 @@
     
     <p id="colorList"></p>
     
+    <canvas id="c"></canvas>
+    
     <script>
      /*Got this from https://gist.github.com/rosszurowski/67f04465c424a9bc0dae*/
-    
+      var c = document.getElementById('c'),
+          ctx = c.getContext('2d');
+
+
       function computeValues(){
-        var color1 = document.getElementById("color1Input").value;
-        var color2 = document.getElementById("color2Input").value;
-        var sliceSize = document.getElementById("sliceSizeInput").value;
-        
+        var color1 = document.getElementById('color1Input').value;
+        var color2 = document.getElementById('color2Input').value;
+        var sliceSize = document.getElementById('sliceSizeInput').value;
         var colors = [];
         
-        for(x = 1; x <= sliceSize ; x++){
-          colors[colors.length] = lerpColor(color1, color2, sliceSize/x);
+        setGradient(color1, color2);
+        
+        //console.log(ctx.getImageData(10, 10, 1, 1));
+        
+        
+        
+        for(var x = 1; x <= sliceSize; x++){
+          var rgb = {
+            r : ctx.getImageData(x/sliceSize, 1, 1, 1).data[0],
+            g: ctx.getImageData(x/sliceSize, 1, 1, 1).data[1],
+            b: ctx.getImageData(x/sliceSize, 1, 1, 1).data[2]
+          }
+          console.log("RGB: ", rgb);
+          colors[colors.length] = rgb2Hex(rgb.r, rgb.g, rgb.b);
         }
         
-        document.getElementById("colorList").innerHTML = colors;
+        console.log(colors);
+        document.getElementById('colorList').textContent = colors;
+        
+      }
+      
+      function setGradient(colorA, colorB){
+        
+        var grd = ctx.createLinearGradient(0, 0, 170, 0);
+        grd.addColorStop(0, colorA);
+        grd.addColorStop(1, colorB);
+        
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, c.width, c.height);
         
       }
 
-      function lerpColor(a, b, amount) { 
-
-        var ah = parseInt(a.replace(/#/g, ''), 16),
-            ar = ah >> 16, ag = ah >> 8 & 0xff, ab = ah & 0xff,
-            bh = parseInt(b.replace(/#/g, ''), 16),
-            br = bh >> 16, bg = bh >> 8 & 0xff, bb = bh & 0xff,
-            rr = ar + amount * (br - ar),
-            rg = ag + amount * (bg - ag),
-            rb = ab + amount * (bb - ab);
-
-        return '#' + ((1 << 24) + (rr << 16) + (rg << 8) + rb | 0).toString(16).slice(1);
+      function rgb2Hex(r, g, b){
+        
+        return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        
+        function componentToHex(c){
+          var hex = c.toString(16);
+          return hex.length == 1 ? "0" + hex : hex;
+        }
       }
       
+
+
      </script>
   </body>
 </html>
