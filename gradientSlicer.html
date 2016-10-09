@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gradient slicer</title> 
+  </head>
+   <body>
+    Color 1(hex): <input type="text" id="color1Input"><br><br>
+    Color 2(hex): <input type="text" id="color2Input"><br><br>
+    Slice  : <input type="number" id="sliceSizeInput"><br><br> 
+    <button onclick="computeValues()">Compute gradient values</button>
+    
+    <p id="colorList"></p>
+    
+    <script>
+     /*Got this from https://gist.github.com/rosszurowski/67f04465c424a9bc0dae*/
+    
+      function computeValues(){
+        var color1 = document.getElementById("color1Input").value;
+        var color2 = document.getElementById("color2Input").value;
+        var sliceSize = document.getElementById("sliceSizeInput").value;
+        
+        var colors = [];
+        
+        for(x = 1; x <= sliceSize ; x++){
+          colors[colors.length] = lerpColor(color1, color2, sliceSize/x);
+        }
+        
+        document.getElementById("colorList").innerHTML = colors;
+        
+      }
+
+      function lerpColor(a, b, amount) { 
+
+        var ah = parseInt(a.replace(/#/g, ''), 16),
+            ar = ah >> 16, ag = ah >> 8 & 0xff, ab = ah & 0xff,
+            bh = parseInt(b.replace(/#/g, ''), 16),
+            br = bh >> 16, bg = bh >> 8 & 0xff, bb = bh & 0xff,
+            rr = ar + amount * (br - ar),
+            rg = ag + amount * (bg - ag),
+            rb = ab + amount * (bb - ab);
+
+        return '#' + ((1 << 24) + (rr << 16) + (rg << 8) + rb | 0).toString(16).slice(1);
+      }
+      
+     </script>
+  </body>
+</html>
