@@ -33,9 +33,9 @@
         
         for(var x = 1; x <= sliceSize; x++){
           var rgb = {
-            r : ctx.getImageData(x/sliceSize, 1, 1, 1).data[0],
-            g: ctx.getImageData(x/sliceSize, 1, 1, 1).data[1],
-            b: ctx.getImageData(x/sliceSize, 1, 1, 1).data[2]
+            r : ctx.getImageData(x/sliceSize * c.width, 1, 1, 1).data[0],
+            g: ctx.getImageData(x/sliceSize * c.width, 1, 1, 1).data[1],
+            b: ctx.getImageData(x/sliceSize* c.width, 1, 1, 1).data[2]
           }
           console.log("RGB: ", rgb);
           colors[colors.length] = rgb2Hex(rgb.r, rgb.g, rgb.b);
