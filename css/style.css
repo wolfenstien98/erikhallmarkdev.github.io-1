@@ -87,6 +87,11 @@ body{
   padding-right: 15px;
   padding-left: 25px;
   cursor: pointer;
+	
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #nav-mobile-button:after {
