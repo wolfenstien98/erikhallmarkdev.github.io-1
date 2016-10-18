@@ -66,7 +66,7 @@ which I use for the prefixing on this site. </p>
 <span class="line"></span>
 
 <p class="post-paragraph">Getting started with Jekyll is very simple, and takes just three commands
-  (Assuming that you have ruby and installed on your system)</p>
+  (Assuming that you have ruby installed on your system)</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">  <span class="nv">$ </span>gem install jekyll
   <span class="nv">$ </span>jekyll new my-site-name
@@ -86,10 +86,10 @@ which I use for the prefixing on this site. </p>
 <h4>How Do I Customize My Jekyll Site To Look The Way I Want it?</h4>
 <span class="line"></span>
 
-<p class="post-paragraph">Customizing Jekyll sites is pretty simple,
-if you know HTML/CSS you should be fine, Jekyll is base on a system called
-<a href="https://shopify.github.io/liquid/" class="post-link">Liquid Templates</a>
-which adds some usefull templating systems to HTML. For instance, lets say that you
+<p class="post-paragraph">Customizing a Jekyll site is pretty simple,
+if you know HTML/CSS you should be fine, Jekyll uses a template engine called
+<a href="https://shopify.github.io/liquid/" class="post-link">Liquid Templates</a>,
+which adds some usefull templating systems to HTML. For instance lets say that you
 wanted to make sure that the title of your page contained the specific title
 of your blog post, all you have to do is add this to the template.</p>
 
@@ -106,26 +106,26 @@ doesn't have a title it will just add the standard title.
 </p>
 
 <p class="post-paragraph">One of the most powerful tools that Liquid proviodes
-  is filters, filters allow you to modify what the output of a Liquid output
-  markup is. Let me demonstrate with some simple usages of filters.</p>
+  is filters, filters allow you to modify the output of the Liquid output
+  markup. Let me demonstrate with some simple usages of filters.</p>
 
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  &lt;span class="data"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%b %-d, %Y"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
   &lt;p class="blog-excerpt"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">strip_html</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">truncatewords</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="w"> </span><span class="p">}}</span>&lt;/p&gt;</code></pre></figure>
 
-<p class="post-paragraph">This will create two thigns. First it will create a date
+<p class="post-paragraph">This will do two really cools things. First it will create a date
   section for the blog post which it's formating with the <span class="snippet">date</span>
   filter, then it create an an excerpt section, strip away the HTML elements, and truncate
-  the excerpt donw to 35 words. I do this exact process on the <a href="/" class="post-link">main page</a>
+  the excerpt down to 35 words. I do this exact process on the <a href="/" class="post-link">main page</a>
   of my website.
 </p>
 
 <p class="post-paragraph">Liquid also allows you to include prewritten files
-via the templateing system, it's very simple to implement. In your Jekyll source
+via the templating system, and it's very simple to implement. In your Jekyll source
 folder you'll create two folders(If they don't exist yet) these folders are
 <span class="snippet">_includes</span> and <span class="snippet">_layouts</span>
-your layouts folder will contain the layouts for your pages, this page on my site
-using a layout I've called <span class="snippet">post</span>, from the layout you
+your layouts folder will contain the layouts for your pages, this page is using a layout
+I've called <span class="snippet">post</span>, from the layout you
 can include items from the <span class="snippet">_layouts</span> folder with the following
 code</p>
 
