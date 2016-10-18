@@ -1,2 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-10-17T22:22:44-07:00</updated><id>http://localhost:4000//</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
-</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-10-18T12:27:23-07:00</updated><id>http://localhost:4000//</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
+</subtitle><entry><title type="html">Making a blog with Jekyll</title><link href="http://localhost:4000/2016/10/17/making-a-blog-with-jekyll.html" rel="alternate" type="text/html" title="Making a blog with Jekyll" /><published>2016-10-17T00:00:00-07:00</published><updated>2016-10-17T00:00:00-07:00</updated><id>http://localhost:4000/2016/10/17/making-a-blog-with-jekyll</id><content type="html" xml:base="http://localhost:4000/2016/10/17/making-a-blog-with-jekyll.html">&lt;p class=&quot;post-paragraph&quot;&gt;A few weeks ago I started playing arround with the idea
+of starting a blog, I could have gone the simple route and used a service like
+&lt;a href=&quot;https://www.blogger.com/home&quot; class=&quot;post-link&quot;&gt;Blogger&lt;/a&gt; or
+&lt;a href=&quot;https://www.tumblr.com/&quot; class=&quot;post-link&quot;&gt;Tumblr&lt;/a&gt;.
+But I decided instead I wanted to make my blog from scratch, with complete controll
+over the code. The first thing I noted is that renting a server is expensive, so
+avoiding that cost was a priority, enter &lt;a href=&quot;https://pages.github.com&quot; class=&quot;post-link&quot;&gt;Github Pages&lt;/a&gt;.
+Pages isn't much, it's a simple static website hosting service from the good people at
+&lt;a href=&quot;https://github.com&quot; class=&quot;post-link&quot;&gt;Github&lt;/a&gt;, but that's all I need.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;The first obvious problem with hosting a blog as a static website, is that
+no one wants to manange all those files by hand, so we're going to need some help.
+Help comes in the form of &lt;a href=&quot;https://jekyllrb.com/&quot; class=&quot;post-link&quot;&gt;Jekyll&lt;/a&gt;,
+a static site generator made in &lt;a href=&quot;https://www.ruby-lang.org/en/&quot; class=&quot;post-link&quot;&gt;Ruby&lt;/a&gt;.
+Jekyll was made for this exact type of thing, and it's completely amazing. It's blog aware
+so putting together a simple blog is pretty much the easiest thing I've ever done,
+and there are a multitude of plugins such as &lt;a href=&quot;https://github.com/octopress/autoprefixer&quot; class=&quot;post-link&quot;&gt;Octopress Autoprefixer&lt;/a&gt;
+which I use for the prefixing on this site. &lt;/p&gt;
+
+&lt;h4&gt;How Do I Make One Of These Sites For Myself?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Getting started with Jekyll is very simple, and takes just three commands
+  (Assuming that you have ruby and installed on your system)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll
+  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new my-site-name
+  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-site-name
+  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;
+  That's it. After that you have a server running at the adress specified in the
+  terminal output(Normally 127.0.0.1:4000).
+&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Once you have the basic site setup, it's pretty simple to
+  configure just the way you want it, you can stick with the built in theme that Jekyll
+  provides, download one off the web, or you can make a completely custom design like I have.
+&lt;/p&gt;
+
+&lt;h4&gt;How Do I Customize My Jekyll Site To Look The Way I Want it?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Customizing Jekyll sites is pretty simple,
+if you know HTML/CSS you should be fine, Jekyll is base on a system called
+&lt;a href=&quot;https://shopify.github.io/liquid/&quot; class=&quot;post-link&quot;&gt;Liquid Templates&lt;/a&gt;
+which adds some usefull templating systems to HTML. For instance, lets say that you
+wanted to make sure that the title of your page contained the specific title
+of your blog post, all you have to do is add this to the template.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &amp;lt;title&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/title&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;You can even use conditional logic to check if certain data exists like so.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &amp;lt;title&amp;gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt; My Website &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/title&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;
+That will check to see if the page has a title varible assigned to it,
+if it does then it will set the HTML title to the page title, if the page
+doesn't have a title it will just add the standard title.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;One of the most powerful tools that Liquid proviodes
+  is filters, filters allow you to modify what the output of a Liquid output
+  markup is. Let me demonstrate with some simple usages of filters.&lt;/p&gt;
+
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &amp;lt;span class=&quot;data&quot;&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%b %-d, %Y&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/span&amp;gt;
+  &amp;lt;p class=&quot;blog-excerpt&quot;&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;excerpt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;truncatewords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;This will create two thigns. First it will create a date
+  section for the blog post which it's formating with the &lt;span class=&quot;snippet&quot;&gt;date&lt;/span&gt;
+  filter, then it create an an excerpt section, strip away the HTML elements, and truncate
+  the excerpt donw to 35 words. I do this exact process on the &lt;a href=&quot;/&quot; class=&quot;post-link&quot;&gt;main page&lt;/a&gt;
+  of my website.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Liquid also allows you to include prewritten files
+via the templateing system, it's very simple to implement. In your Jekyll source
+folder you'll create two folders(If they don't exist yet) these folders are
+&lt;span class=&quot;snippet&quot;&gt;_includes&lt;/span&gt; and &lt;span class=&quot;snippet&quot;&gt;_layouts&lt;/span&gt;
+your layouts folder will contain the layouts for your pages, this page on my site
+using a layout I've called &lt;span class=&quot;snippet&quot;&gt;post&lt;/span&gt;, from the layout you
+can include items from the &lt;span class=&quot;snippet&quot;&gt;_layouts&lt;/span&gt; folder with the following
+code&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Where &lt;span class=&quot;snippet&quot;&gt;include.html&lt;/span&gt; is the
+file you want to grab from the includes folder. But it doesn't just have to be HTML
+files, you can also use Markdown, or a number of other languages are avalible via plugins.
+&lt;/p&gt;</content><author><name>Erik Hallmark</name></author><summary type="html">A few weeks ago I started playing arround with the idea
+of starting a blog, I could have gone the simple route and used a service like
+Blogger or
+Tumblr.
+But I decided instead I wanted to make my blog from scratch, with complete controll
+over the code. The first thing I noted is that renting a server is expensive, so
+avoiding that cost was a priority, enter Github Pages.
+Pages isn't much, it's a simple static website hosting service from the good people at
+Github, but that's all I need.</summary></entry></feed>
