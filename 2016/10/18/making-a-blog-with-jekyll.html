@@ -57,8 +57,8 @@ Bl..."/>
 of starting a blog, I could have gone the simple route and used a service like
 <a href="https://www.blogger.com/home" class="post-link">Blogger</a> or
 <a href="https://www.tumblr.com/" class="post-link">Tumblr</a>.
-But I decided that I wanted to make a blog from scratch instead, that way I could
-have complete controll over the code. The first thing I noted is that renting a
+Instead I decided that I wanted to make a blog from scratch, that way I could
+have complete control over the code. The first thing I noted is that renting a
 server is expensive, so avoiding that cost was a priority, enter
 <a href="https://pages.github.com" class="post-link">Github Pages</a>.
 Pages isn't much, it's a simple static website hosting service from the good people at
@@ -102,9 +102,9 @@ which I use for the prefixing on this site. </p>
 <span class="line"></span>
 
 <p class="post-paragraph">Customizing a Jekyll site is pretty simple,
-if you know HTML/CSS you should be fine, Jekyll uses a template engine called
+if you know HTML/CSS you should be fine. Jekyll uses a template engine called
 <a href="https://shopify.github.io/liquid/" class="post-link">Liquid Templates</a>,
-which adds some usefull templating systems to HTML. For instance lets say that you
+which adds some usefull templating systems to HTML. For instance let's say that you
 wanted to make sure that the title of your page contained the specific title
 of your blog post, all you have to do is add this to the template.</p>
 
@@ -120,17 +120,17 @@ if it does then it will set the HTML title to the page title, if the page
 doesn't have a title it will just add the standard title.
 </p>
 
-<p class="post-paragraph">One of the most powerful tools that Liquid proviodes
-  is filters, filters allow you to modify the output of the Liquid output
+<p class="post-paragraph">One of the most powerful tools that Liquid provides
+  is filters. Filters allow you to modify the output of the Liquid output
   markup. Let me demonstrate with some simple usages of filters.</p>
 
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  &lt;span class="date"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%b %-d, %Y"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
   &lt;p class="blog-excerpt"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">strip_html</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">truncatewords</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="w"> </span><span class="p">}}</span>&lt;/p&gt;</code></pre></figure>
 
-<p class="post-paragraph">This will do two really cools things. First it will create a date
+<p class="post-paragraph">This will do two  things. First it will create a date
   section for the blog post which it's formating with the <span class="snippet">date</span>
-  filter, then it create an an excerpt section, strip away the HTML elements, and truncate
+  filter, then it creates an excerpt section, strips away the HTML elements, and truncates
   the excerpt down to 35 words. I do this exact process on the <a href="/" class="post-link">main page</a>
   of my website.
 </p>
@@ -147,7 +147,7 @@ code</p>
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">include</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
 <p class="post-paragraph">Where <span class="snippet">include.html</span> is the
-file you want to grab from the includes folder. But it doesn't just have to be HTML
+file you want to grab from the <span class="snippet">_includes</span> folder. But it doesn't just have to be HTML
 files, you can also use Markdown, or a number of other languages are avalible via plugins.
 </p>
 
