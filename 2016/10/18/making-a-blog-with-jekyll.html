@@ -1,23 +1,24 @@
 <html>
   <head>
-    <title> Making a blog with Jekyll --  Erik Hallmark</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Taviraj" rel="stylesheet">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A few weeks ago I started playing arround with the idea
+  <title> Making a blog with Jekyll --  Erik Hallmark</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Taviraj" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A few weeks ago I started playing arround with the idea
 of starting a blog, I could have gone the simple route and used a service like
 Bl..."/>
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-2541356049256563",
-        enable_page_level_ads: true
-      });
-    </script>
-  </head>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-2541356049256563",
+      enable_page_level_ads: true
+    });
+  </script>
+</head>
+
   <body>
 
     <header id="header">
@@ -38,7 +39,7 @@ Bl..."/>
     <a href="#" id="nav-mobile-button" tabindex="1">Navigation</a>
 
     <nav id="nav-mobile">
-      <a class="navItem-mobile active" href="/">Home</a>
+      <a class="navItem-mobile" href="/">Home</a>
       <a class="navItem-mobile" href="/stuff.html">Stuff</a>
       <a class="navItem-mobile" href="/contact.html">Contact</a>
 
@@ -56,26 +57,28 @@ Bl..."/>
 of starting a blog, I could have gone the simple route and used a service like
 <a href="https://www.blogger.com/home" class="post-link">Blogger</a> or
 <a href="https://www.tumblr.com/" class="post-link">Tumblr</a>.
-But I decided instead I wanted to make my blog from scratch, with complete controll
-over the code. The first thing I noted is that renting a server is expensive, so
-avoiding that cost was a priority, enter <a href="https://pages.github.com" class="post-link">Github Pages</a>.
+But I decided that I wanted to make a blog from scratch instead, that way I could
+have complete controll over the code. The first thing I noted is that renting a
+server is expensive, so avoiding that cost was a priority, enter
+<a href="https://pages.github.com" class="post-link">Github Pages</a>.
 Pages isn't much, it's a simple static website hosting service from the good people at
-<a href="https://github.com" class="post-link">Github</a>, but that's all I need.</p>
+<a href="https://github.com" class="post-link">Github</a>, but that simple service
+is all that I need</p>
 
 <p class="post-paragraph">The first obvious problem with hosting a blog as a static website, is that
-no one wants to manange all those files by hand, so we're going to need some help.
-Help comes in the form of <a href="https://jekyllrb.com/" class="post-link">Jekyll</a>,
+no one wants to manange all those files by hand, so I knew I was going to need some help.
+That help came in the form of <a href="https://jekyllrb.com/" class="post-link">Jekyll</a>,
 a static site generator made in <a href="https://www.ruby-lang.org/en/" class="post-link">Ruby</a>.
-Jekyll was made for this exact type of thing, and it's completely amazing. It's blog aware
-so putting together a simple blog is pretty much the easiest thing I've ever done,
-and there are a multitude of plugins such as <a href="https://github.com/octopress/autoprefixer" class="post-link">Octopress Autoprefixer</a>
+Jekyll was made for this exact type of thing, and it's unbelievably easy to use. It's blog aware
+so putting together a simple blog is one of the easiest things I've ever done,
+and there are a ton of amazing plugins such as <a href="https://github.com/octopress/autoprefixer" class="post-link">Octopress Autoprefixer</a>
 which I use for the prefixing on this site. </p>
 
 <h4>How Do I Make One Of These Sites For Myself?</h4>
 <span class="line"></span>
 
-<p class="post-paragraph">Getting started with Jekyll is very simple, and takes just three commands
-  (Assuming that you have ruby installed on your system)</p>
+<p class="post-paragraph">Getting started with Jekyll is very simple, and takes
+  just three commands in your system terminal (Assuming that you have ruby installed on your system)</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">  <span class="nv">$ </span>gem install jekyll
   <span class="nv">$ </span>jekyll new my-site-name
@@ -84,7 +87,10 @@ which I use for the prefixing on this site. </p>
 
 <p class="post-paragraph">
   That's it. After that you have a server running at the adress specified in the
-  terminal output(Normally 127.0.0.1:4000).
+  terminal output(Normally 127.0.0.1:4000). This server will automaticly rebuild
+  the site if you change a file. When you want to build the site for deployment
+  I'd suggest you use <span class="snippet">jekyll build</span>, it builds the URLS
+  base off of your <span class="snippet">_config.yml</span> file, instead of localhost.
 </p>
 
 <p class="post-paragraph">Once you have the basic site setup, it's pretty simple to
@@ -119,7 +125,7 @@ doesn't have a title it will just add the standard title.
   markup. Let me demonstrate with some simple usages of filters.</p>
 
 
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  &lt;span class="data"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%b %-d, %Y"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  &lt;span class="date"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s2">"%b %-d, %Y"</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt;
   &lt;p class="blog-excerpt"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">strip_html</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">truncatewords</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="w"> </span><span class="p">}}</span>&lt;/p&gt;</code></pre></figure>
 
 <p class="post-paragraph">This will do two really cools things. First it will create a date
