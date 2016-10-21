@@ -323,6 +323,11 @@ body{
   margin: 8px;
 }
 
+#comment-box{
+  max-width: 680px;
+  margin: auto;
+}
+
 /* Syntax Highlighting begin*/
 
 .snippet{
