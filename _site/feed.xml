@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://erikhallmark.com//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://erikhallmark.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://erikhallmark.com//" rel="alternate" type="text/html" /><updated>2016-11-26T16:52:33-08:00</updated><id>http://erikhallmark.com///</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
+</subtitle><entry><title type="html">Frameworks are awesome… but</title><link href="http://erikhallmark.com//2016/11/26/Frameworks-Are-Awesome.html" rel="alternate" type="text/html" title="Frameworks are awesome... but" /><published>2016-11-26T11:20:00-08:00</published><updated>2016-11-26T11:20:00-08:00</updated><id>http://erikhallmark.com//2016/11/26/Frameworks-Are-Awesome</id><content type="html" xml:base="http://erikhallmark.com//2016/11/26/Frameworks-Are-Awesome.html">&lt;p class=&quot;post-paragraph&quot;&gt;I would assume most people reading this blog know what
+a framework is, but in case you don't let me explain. A framework is pretty much
+what it sounds like, it gives developers scaffolding for making applications.
+For my examples I will be using the the &lt;a class=&quot;post-link&quot; href=&quot;https://www.qt.io/&quot;&gt;Qt Framework&lt;/a&gt;,
+Qt is a framework for creating cross-platoform GUI applications it offers utilies for things
+such as managing windows, reading &amp;amp; writing files, accesssing the internet, drawing GUIs,
+and much much more. I use Qt whenever I want to quickly create an application, because it make the more
+repetitive parts of programming much faster and easier. But if need be I could create
+applications with the same functionality without the framework, and in my opinion
+that's a very important thing to be able to do.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Frameworks are fantastic tools for developers
+to quickly create applications, and if you're creating any large application
+I'd highly suggest that you use one. But I see a lot of new developers making a big
+mistake with frameworks, and I made this same mistake when I started out, they think
+that a framework is a tool for doing something that they don't know how to do.
+That simply isn't what a framework is, a framework is a tool for making the process
+of building applications faster and less monotonous. A framework should never be used
+in lieu of knowledge, but as an extention of it.&lt;/p&gt;
+
+
+&lt;h4&gt;Why should I know how a framwork works?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;In my opinion a developer should know how every single line of
+code in their project works, all the way down to the CPU instructions. Most
+developers probably don't need to be as fastidious as that, but knowing how the tools
+you're using work is pretty important. First of all it helps with debugging,
+if you're having a problem with your code that you can track down to the framework
+you're using, it helps to have an idea of how the framework is working under the hood.
+Secondly, if you know how a framework functions, you can choose more efficent ways
+of doing things, and efficiency is key in any large application.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Other than making the process of building applications
+faster, knowing how a framework works gives you a big advantage in the job market.
+Companies want to hire the best, and if you can show a large quanity of knowledge
+you will be able to show that you are amongst the best.&lt;/p&gt;
+
+&lt;h4&gt;Why use a framework if I already know how to do this stuff?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Frameworks can be big, like really big, and they need to
+constantly updated to keep in line the with latest standards, security protocols, new platform
+features, bug fixes, and innumerable other reasons. So they're not exactly the type
+of thing most developers want to take on for themselves.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Beyond the complexity of maintaining a framework, another
+reason to use one made by other people is, they're probably better programmers.
+Just because I could build a multi-platform GUI application without a framework
+doesn't mean that I should, because it would probably be riddle with bugs and be inefficient,
+because there are tons of really amazing programmers who work on things like
+&lt;a class=&quot;post-link&quot; href=&quot;https://www.qt.io/&quot;&gt;Qt&lt;/a&gt;,
+&lt;a class=&quot;post-link&quot; href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;,
+and &lt;a class=&quot;post-link&quot; href=&quot;https://angularjs.org/&quot;&gt;Angular&lt;/a&gt;.
+No single programmer can hope to be as good as the massive teams that make and maintain
+these frameworks, and we're lucky that they made them for us to use.&lt;/p&gt;
+
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Please practice proper framework safety.&lt;/p&gt;</content><author><name>Erik Hallmark</name></author><summary type="html">I would assume most people reading this blog know what
+a framework is, but in case you don't let me explain. A framework is pretty much
+what it sounds like, it gives developers scaffolding for making applications.
+For my examples I will be using the the Qt Framework,
+Qt is a framework for creating cross-platoform GUI applications it offers utilies for things
+such as managing windows, reading &amp;amp; writing files, accesssing the internet, drawing GUIs,
+and much much more. I use Qt whenever I want to quickly create an application, because it make the more
+repetitive parts of programming much faster and easier. But if need be I could create
+applications with the same functionality without the framework, and in my opinion
+that's a very important thing to be able to do.</summary></entry><entry><title type="html">Making a blog with Jekyll</title><link href="http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll.html" rel="alternate" type="text/html" title="Making a blog with Jekyll" /><published>2016-10-18T11:20:00-07:00</published><updated>2016-10-18T11:20:00-07:00</updated><id>http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll</id><content type="html" xml:base="http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll.html">&lt;p class=&quot;post-paragraph&quot;&gt;A few weeks ago I started playing arround with the idea
+of starting a blog, I could have gone the simple route and used a service like
+&lt;a href=&quot;https://www.blogger.com/home&quot; class=&quot;post-link&quot;&gt;Blogger&lt;/a&gt; or
+&lt;a href=&quot;https://www.tumblr.com/&quot; class=&quot;post-link&quot;&gt;Tumblr&lt;/a&gt;.
+Instead I decided that I wanted to make a blog from scratch, that way I could
+have complete control over the code. The first thing I noted is that renting a
+server is expensive, so avoiding that cost was a priority, enter
+&lt;a href=&quot;https://pages.github.com&quot; class=&quot;post-link&quot;&gt;Github Pages&lt;/a&gt;.
+Pages isn't much, it's a simple static website hosting service from the good people at
+&lt;a href=&quot;https://github.com&quot; class=&quot;post-link&quot;&gt;Github&lt;/a&gt;, but that simple service
+is all that I need&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;The first obvious problem with hosting a blog as a static website, is that
+no one wants to manange all those files by hand, so I knew I was going to need some help.
+That help came in the form of &lt;a href=&quot;https://jekyllrb.com/&quot; class=&quot;post-link&quot;&gt;Jekyll&lt;/a&gt;,
+a static site generator made in &lt;a href=&quot;https://www.ruby-lang.org/en/&quot; class=&quot;post-link&quot;&gt;Ruby&lt;/a&gt;.
+Jekyll was made for this exact type of thing, and it's unbelievably easy to use. It's blog aware
+so putting together a simple blog is one of the easiest things I've ever done,
+and there are a ton of amazing plugins such as &lt;a href=&quot;https://github.com/octopress/autoprefixer&quot; class=&quot;post-link&quot;&gt;Octopress Autoprefixer&lt;/a&gt;
+which I use for the prefixing on this site. &lt;/p&gt;
+
+&lt;h4&gt;How Do I Make One Of These Sites For Myself?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Getting started with Jekyll is very simple, and takes
+  just three commands in your system terminal (Assuming that you have ruby installed on your system)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll
+  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new my-site-name
+  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-site-name
+  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;
+  That's it. After that you have a server running at the adress specified in the
+  terminal output(Normally 127.0.0.1:4000). This server will automaticly rebuild
+  the site if you change a file. When you want to build the site for deployment
+  I'd suggest you use &lt;span class=&quot;snippet&quot;&gt;jekyll build&lt;/span&gt;, it builds the URLS
+  base off of your &lt;span class=&quot;snippet&quot;&gt;_config.yml&lt;/span&gt; file, instead of localhost.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Once you have the basic site setup, it's pretty simple to
+  configure just the way you want it, you can stick with the built in theme that Jekyll
+  provides, download one off the web, or you can make a completely custom design like I have.
+&lt;/p&gt;
+
+&lt;h4&gt;How Do I Customize My Jekyll Site To Look The Way I Want it?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Customizing a Jekyll site is pretty simple,
+if you know HTML/CSS you should be fine. Jekyll uses a template engine called
+&lt;a href=&quot;https://shopify.github.io/liquid/&quot; class=&quot;post-link&quot;&gt;Liquid Templates&lt;/a&gt;,
+which adds some usefull templating systems to HTML. For instance let's say that you
+wanted to make sure that the title of your page contained the specific title
+of your blog post, all you have to do is add this to the template.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &amp;lt;title&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/title&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;You can even use conditional logic to check if certain data exists like so.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &amp;lt;title&amp;gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt; My Website &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/title&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;
+That will check to see if the page has a title varible assigned to it,
+if it does then it will set the HTML title to the page title, if the page
+doesn't have a title it will just add the standard title.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;One of the most powerful tools that Liquid provides
+  is filters. Filters allow you to modify the output of the Liquid output
+  markup. Let me demonstrate with some simple usages of filters.&lt;/p&gt;
+
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &amp;lt;span class=&quot;date&quot;&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%b %-d, %Y&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/span&amp;gt;
+  &amp;lt;p class=&quot;blog-excerpt&quot;&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;excerpt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strip_html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;truncatewords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;This will do two  things. First it will create a date
+  section for the blog post which it's formating with the &lt;span class=&quot;snippet&quot;&gt;date&lt;/span&gt;
+  filter, then it creates an excerpt section, strips away the HTML elements, and truncates
+  the excerpt down to 35 words. I do this exact process on the &lt;a href=&quot;/&quot; class=&quot;post-link&quot;&gt;main page&lt;/a&gt;
+  of my website.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Liquid also allows you to include prewritten files
+via the templating system, and it's very simple to implement. In your Jekyll source
+folder you'll create two folders(If they don't exist yet) these folders are
+&lt;span class=&quot;snippet&quot;&gt;_includes&lt;/span&gt; and &lt;span class=&quot;snippet&quot;&gt;_layouts&lt;/span&gt;
+your layouts folder will contain the layouts for your pages, this page is using a layout
+I've called &lt;span class=&quot;snippet&quot;&gt;post&lt;/span&gt;, from the layout you
+can include items from the &lt;span class=&quot;snippet&quot;&gt;_layouts&lt;/span&gt; folder with the following
+code&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Where &lt;span class=&quot;snippet&quot;&gt;include.html&lt;/span&gt; is the
+file you want to grab from the &lt;span class=&quot;snippet&quot;&gt;_includes&lt;/span&gt; folder. But it doesn't just have to be HTML
+files, you can also use Markdown, or a number of other languages are avalible via plugins.
+&lt;/p&gt;</content><author><name>Erik Hallmark</name></author><summary type="html">A few weeks ago I started playing arround with the idea
+of starting a blog, I could have gone the simple route and used a service like
+Blogger or
+Tumblr.
+Instead I decided that I wanted to make a blog from scratch, that way I could
+have complete control over the code. The first thing I noted is that renting a
+server is expensive, so avoiding that cost was a priority, enter
+Github Pages.
+Pages isn't much, it's a simple static website hosting service from the good people at
+Github, but that simple service
+is all that I need</summary></entry></feed>
